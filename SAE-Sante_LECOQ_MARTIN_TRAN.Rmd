@@ -7,23 +7,12 @@ output:
     toc: yes
     toc_depth: 2
 ---
-##### Réalisé par : Lomann LECOQ, Ewen MARTIN et Vo Khanh Chi TRAN.
-
 
 ## Objectif du projet
 
 Ce projet est à l'initiative du Groupement Hospitalier de Territoire d'Armor. Ceux-ci ont lancé une Plateforme d'Orientation des Patients (POP). Cet outil a pour but de mieux orienter les patients afin de diminuer la tension existante concernant les lits ainsi que le personnel hospitalier.
 
 Notre objectif est donc d'évaluer l'efficacité de cet outil afin d'en faire une critique objective. Nous devrons également mesurer l'impact que cet outil a sur la Durée Moyenne de Séjour ainsi que sur les réhospitalisations.
-
-## Démarche
-
-Ce projet a p   our but de démontrer l'utilité ou non du POP. Pour ce faire, plusieurs étapes sont nécessaires :
-
-- l'importation des données  
-- le nettoyage et la transformation des données  
-- analyse descriptive des données  
-- analyse par cas-témoins des données
 
 ## Importation des données
 
@@ -581,12 +570,3 @@ Et pour finir on fait le calcule des OR
 odds_ratio_result <- epitab(table_pop_etud_2, method = "oddsratio", rev = "columns")
 odds_ratio_result
 ```
-
-
-## Conclusion
-
-L'intégration de la POP ne se révèle pas aussi efficace que l'on pourrait le penser. En interprétant nos résultats, on constate que pour deux patients d’un même âge, du même sexe et présentant la même pathologie, celui suivi par la POP a plus de chances de voir sa durée de séjour à l’hôpital rallongée. Cependant, cela n’a aucun impact sur la réhospitalisation de ces patients.
-
-Les hypothèses que nous pouvons formuler sont les suivantes : lors de l’utilisation de la POP, il est possible que le personnel hospitalier se penche plus sérieusement sur le cas de leurs patients, même si ceux-ci pourraient se sentir mieux. La gestion des lits deviendrait alors plus délicate, et les patients resteraient plus longtemps à l’hôpital avant d’être relâchés. Ou bien, l’outil est peut-être plus complexe à prendre en main, ce qui ralentit l’orientation des patients.
-
-Ce qui est certain, c’est que l’intégration de la POP nécessite une réelle analyse critique afin d’en comprendre la cause de ce rallongement des Durées Moyennes de Séjour.-
